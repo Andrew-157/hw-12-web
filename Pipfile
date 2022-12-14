@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 aiohttp = "*"
+lxml = "*"
+beautifulsoup4 = "*"
 
 [dev-packages]
 autopep8 = "*"
