@@ -14,4 +14,4 @@ link = Table(
 
 
 async def pg_context(app):
-    conf = app['conf']['mysql']
+    conf = app['conf']['postgres']

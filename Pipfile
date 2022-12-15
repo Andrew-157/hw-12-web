@@ -12,7 +12,8 @@ sqlalchemy = "*"
 aiohttp-jinja2 = "*"
 alembic = "*"
 pyyaml = "*"
-aiomysql = "*"
+py-postgresql = "*"
+aiopg = {extras = ["sa"], version = "*"}
 
 [dev-packages]
 autopep8 = "*"
