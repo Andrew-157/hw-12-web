@@ -13,7 +13,6 @@ aiohttp-jinja2 = "*"
 alembic = "*"
 pyyaml = "*"
 py-postgresql = "*"
-aiopg = {extras = ["sa"], version = "*"}
 
 [dev-packages]
 autopep8 = "*"
