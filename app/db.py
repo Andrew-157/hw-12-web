@@ -11,3 +11,7 @@ link = Table(
     Column('link', String(150), nullable=False),
     Column('data', String(200), nullable=False)
 )
+
+
+async def pg_context(app):
+    conf = app['conf']['mysql']
