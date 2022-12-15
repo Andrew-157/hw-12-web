@@ -12,6 +12,7 @@ sqlalchemy = "*"
 aiohttp-jinja2 = "*"
 alembic = "*"
 pyyaml = "*"
+aiomysql = "*"
 
 [dev-packages]
 autopep8 = "*"
