@@ -3,4 +3,4 @@ from views import index
 
 
 def setup_routes(app: Application):
-    app.router.add_get('/', index)
+    app.router.add_get('/agregator', index)
