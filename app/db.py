@@ -13,7 +13,6 @@ class Link(Base):
 
     id = Column(Integer, primary_key=True)
     link = Column(String(150), nullable=False)
-    agregated_data = Column(String(200), nullable=False)
 
 
 async def pg_context(app):
