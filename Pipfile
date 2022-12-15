@@ -7,6 +7,11 @@ name = "pypi"
 aiohttp = "*"
 lxml = "*"
 beautifulsoup4 = "*"
+pymysql = "*"
+sqlalchemy = "*"
+aiohttp-jinja2 = "*"
+alembic = "*"
+pyyaml = "*"
 
 [dev-packages]
 autopep8 = "*"
