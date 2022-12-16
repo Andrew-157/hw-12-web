@@ -1,7 +1,5 @@
-from aiohttp import web
 from db import Link
 from agregation import run_agregations
-import asyncio
 from agregation import results
 import aiohttp_jinja2
 
