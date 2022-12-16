@@ -12,7 +12,7 @@ class Link(Base):
     __tablename__ = 'links'
 
     id = Column(Integer, primary_key=True)
-    link = Column(String(150), nullable=False)
+    link = Column(String(150), nullable=False, unique=True)
 
 
 async def pg_context(app):
