@@ -36,7 +36,7 @@ async def source_2(session: aiohttp.ClientSession, url):
 
         finish_index = str(soup_content)[1:].find('<')
 
-        result = str(soup_content)[start_index+1: finish_index-1]
+        result = str(soup_content)[start_index+1: finish_index+1]
 
         return result
 
@@ -53,9 +53,7 @@ async def run_agregations(url_1, url_2):
 
     return result_1, result_2
 
-
 url_1 = 'https://www.investopedia.com/terms/c/capitalism.asp'
 url_2 = 'https://www.imf.org/external/pubs/ft/fandd/2015/06/basics.htm'
 
-
-print(asyncio.run(run_agregations(url_1, url_2))[1])
+results = asyncio.run(run_agregations(url_1, url_2))
