@@ -53,7 +53,9 @@ async def run_agregations(url_1, url_2):
 
     return result_1, result_2
 
+
 url_1 = 'https://www.investopedia.com/terms/c/capitalism.asp'
 url_2 = 'https://www.imf.org/external/pubs/ft/fandd/2015/06/basics.htm'
+
 
 results = asyncio.run(run_agregations(url_1, url_2))

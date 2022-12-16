@@ -3,8 +3,10 @@ from db import Link
 from agregation import run_agregations
 import asyncio
 from agregation import results
+import aiohttp_jinja2
 
 
+@aiohttp_jinja2.template('results.html')
 async def agregator(request):
 
     url_1 = 'https://www.investopedia.com/terms/c/capitalism.asp'
@@ -15,7 +17,4 @@ async def agregator(request):
     request.app['db_session'].add_all(links)
     request.app['db_session'].commit()
 
-    return web.Response(text=f"""
-                        <p>Result 1: {results[0]}</p>
-                        <p>Result 2: {results[1]}</p>
-                        """)
+    return {'results': results}
